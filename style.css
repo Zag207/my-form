@@ -27,8 +27,11 @@ header h1 {
 header p {
   margin-bottom: 0;
 }
-header.new_color {
+header.new_color_white {
   color: #fff;
+}
+header.base_color {
+  color: black;
 }
 
 main {
