@@ -1,0 +1,100 @@
+@charset "UTF-8";
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: bisque;
+  margin: 0;
+}
+body.Ouuuuu {
+  background-image: url("images/билли.jpg");
+}
+body.hehehe {
+  background-image: url("images/image.jpg");
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  color: black;
+}
+header h1 {
+  margin-bottom: 0;
+}
+header p {
+  margin-bottom: 0;
+}
+header.new_color {
+  color: #fff;
+}
+
+main {
+  padding: 2.5rem;
+  background-color: blueviolet;
+  border-radius: 0.25rem;
+}
+
+form label,
+form button {
+  width: 100%;
+  display: block;
+  color: black;
+  font-size: 1.125rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+form label.radio-button,
+form button.radio-button {
+  margin-bottom: 0.5rem;
+}
+form label.pad,
+form button.pad {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+form label:first-child {
+  margin-top: 0;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+}
+form fieldset label.checkbox {
+  margin: 0 0 0.5rem 0;
+}
+form fieldset label:last-child {
+  margin-bottom: 0;
+}
+form button {
+  padding: 0.75rem 0;
+  background-color: #48d54a;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+form input:not([type=radio], [type=checkbox]),
+form textarea,
+form select {
+  width: 100%;
+  border: 1px solid #ced4da;
+  color: #495057;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin: 0;
+  box-sizing: border-box;
+  margin-top: 0.4rem;
+}
+form textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+form input:not([type=radio], [type=checkbox]),
+form select {
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+}/*# sourceMappingURL=style.css.map */

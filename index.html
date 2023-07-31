@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Анкета призивника</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Анкета призывника</h1>
+        <p id="description">
+          Эти данные мы используем при твоём призыве, сладкий
+        </p>
+      </header>
+      <main>
+        <form action="" id="survey-form">
+          <label id="name-label" for="name">
+            Имя
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Имя"
+            />
+          </label>
+          <label id="email-label" for="email">
+            Адрес электронной почты
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Адрес электронной почты"
+            />
+          </label>
+          <label id="number-label" for="number">
+            Возраст
+            <input
+              type="number"
+              id="number"
+              name="age"
+              min="19"
+              max="90"
+              placeholder="Ваш возраст"
+            />
+          </label>
+          <label for="dropdown">
+            В каких войсках вы хотите служить?
+            <select name="kind_army" id="dropdown" required>
+              <option disabled selected value="">Тип войск</option>
+              <option value="1">Воздушные</option>
+              <option value="3">Ракетные</option>
+              <option value="4">Морской флот</option>
+              <option value="5">Танковые</option>
+            </select>
+          </label>
+          <label class="radio-button" for="bad-medicine">
+            <input
+              type="radio"
+              id="bad-medicine"
+              name="helthy"
+              value="bad-helthy"
+              required
+            />
+            Имею медицинские противопоказания
+          </label>
+          <label class="radio-button pad" for="good-medicine">
+            <input
+              type="radio"
+              id="good-medicine"
+              name="helthy"
+              value="good-helthy"
+              required
+            />
+            Не имею медицинских противопоказаний
+          </label>
+          <fieldset class="checkboxes_group">
+            <label for="want_to_serve" class="checkbox">
+              <input
+                type="checkbox"
+                id="want_to_serve"
+                name="want_serve"
+                value="yes"
+              />
+              Хочу служить(необязательно)
+            </label>
+            <label for="group_checkbox_1" class="checkbox">
+              <input
+                type="checkbox"
+                id="group_checkbox_1"
+                value="one"
+                name="group_checkbox_1"
+              />
+              Дальше воображения не хватило)
+            </label>
+            <label for="group_checkbox_2" class="checkbox">
+              <input
+                type="checkbox"
+                id="group_checkbox_2"
+                value="two"
+                name="group_checkbox_2"
+              />
+              Бла-блASS
+            </label>
+          </fieldset>
+          <label for="">
+            Что мы еще должны о вас знать?<textarea
+              name="coment"
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="Доп. информация"
+            ></textarea>
+          </label>
+          <!-- <button type="submit" id="submit">Отправить</button> -->
+        </form>
+        <button>Отправить</button>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
